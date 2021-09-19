@@ -1,43 +1,141 @@
-@font-face{
-    font-family: "BYekan";
-    src: url("../fonts/yekan/BYekan-webfont.eot") format("eot"),
-        url("../fonts/yekan/BYekan-webfont.woff") format("woff"),
-        url("../fonts/yekan/BYekan-webfont.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
-    font-family: 'Shabnam';
-    src: url('../fonts//shabnam-font-v2.4.0/Shabnam.eot');
-    src: url('../fonts/shabnam-font-v2.4.0/Shabnam-Light.eot');
-    src: url('../fonts/shabnam-font-v2.4.0/Shabnam-Bold.eot?#iefix') format('FontName-opentype'), url('../fonts/shabnam-font-v2.4.0/Shabnam.woff') format('woff'), url('../fonts/shabnam-font-v2.4.0/tff') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Shabnam";
+  src: url("../fonts//shabnam-font-v2.4.0/Shabnam.eot");
+  src: url("../fonts/shabnam-font-v2.4.0/Shabnam-Light.eot");
+  src: url("../fonts/shabnam-font-v2.4.0/Shabnam-Bold.eot?#iefix")
+      format("FontName-opentype"),
+    url("../fonts/shabnam-font-v2.4.0/Shabnam.woff") format("woff"),
+    url("../fonts/shabnam-font-v2.4.0/tff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-*{
-    font-family: 'Shabnam';
-    direction: rtl;
-    text-align: right;
+body{
+    background: url(../images/body_back2.jpg) repeat;
+}
+* {
+  font-family: "Shabnam";
+  direction: rtl;
+  text-align: right;
 }
 
-.main_container{
-    border: 1px solid green;
-    border-radius: 5px;
+.main_container {
+  border: 1px solid green;
+  border-radius: 5px;
 }
 .main_container .col {
-    border: 1px solid green;
-    border-radius: 5px;
-    background: purple;
-    height: 100px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background: purple;
+  height: 100px;
 }
 
-nav .sidenav-trigger{
-    float: right;
+nav .sidenav-trigger {
+  float: right;
+}
+.navbar_ul {
+  display: flex;
+  position: relative;
+  right: 80px !important;
+}
+nav .brand-logo {
+  width: 80px;
+  top: 0.5rem;
+}
+nav .brand-logo img {
+  width: 100%;
+  filter: drop-shadow(0 0 1px white);
+  transition: all 600ms ease;
 }
 
-@media(min-width:992px){
-    nav .brand-logo{
-        right: unset !important;
-        left: 0.5rem !important;
-    }
+nav .brand-logo img:hover {
+  filter: drop-shadow(0 0 5px rgb(246, 246, 246));
+}
+.item_content {
+  width: 100%;
+  height: 100%;
+}
+
+.tabs-content.carousel.carousel-slider {
+  height: calc(100vh - 64px) !important;
+}
+
+.fixed-action-btn {
+  right: unset !important;
+}
+
+.floating_quick_access {
+  position: relative;
+  right: 5px;
+  bottom: -15px;
+}
+
+.menu_links_desktop::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #00d81d;
+  display: block;
+  position: relative;
+  bottom: 10px;
+  transform: scaleX(0);
+  transition: all 200ms ease;
+  border-radius: 10px;
+}
+
+.menu_links_desktop:hover::after {
+  transform: scaleX(1);
+}
+
+.menu_links_desktop.active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #00d81d;
+  display: block;
+  position: relative;
+  bottom: 10px;
+  border-radius: 10px;
+  transform: scaleX(1);
+}
+
+/*Moblie Demo*/
+#mobile-demo {
+  background: linear-gradient(#a110898c, #444cb854, #a110898c),
+    url(../images/sideBack3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobile-demo li {
+  width: 100%;
+}
+#mobile-demo li a {
+  text-align: center;
+  color: white;
+  transition: all 600ms ease;
+}
+#mobile-demo li a:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+    backdrop-filter: blur(2px);
+}
+#nav_svg{
+    position: fixed;
+    top: 32px;
+    pointer-events: none !important;
+}
+.nav-shodow{
+    filter: drop-shadow(0 0 6px black);
+}
+nav ul li a:hover{
+    background: transparent !important;
+}
+@media (min-width: 992px) {
+  nav .brand-logo {
+    right: 6px !important ;
+  }
 }
