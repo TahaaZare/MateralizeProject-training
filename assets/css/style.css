@@ -18,7 +18,6 @@ body {
   text-align: right;
 }
 
-
 nav .sidenav-trigger {
   float: right;
 }
@@ -139,6 +138,54 @@ nav ul li a:hover {
   width: unset !important;
   min-width: 100%;
 }
+
+.mt-4 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 2rem !important;
+}
+.w_100 {
+  width: 100% !important;
+}
+.quick_accsess_items .image img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 135px;
+}
+.quick_accsess_items h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: rgba(117, 55, 231, 0.911);
+}
+.subtitl {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 4px solid #880e4f;
+  margin-top: 5px;
+  transition: all 600ms ease-in;
+  cursor: pointer;
+}
+.subtitl:hover {
+  font-size: 2rem;
+  transition: all 600ms ease-out;
+}
+.quick_item {
+    transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+    transition: 0.6s ease all;
+  }
+  
+  .quick_item:hover {
+    transform: perspective(800px) rotateY(-15deg) translateY(-10px) rotateX(10deg)
+      scale(1);
+    filter: blur(0);
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #880e4f);
+    -webkit-filter: drop-shadow(0 0 5px #880e4f);
+  }
 /*end Slider*/
 @media (min-width: 992px) {
   nav .brand-logo {
