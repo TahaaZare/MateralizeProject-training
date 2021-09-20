@@ -13,4 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(function () {
         M.Carousel.getInstance(carouselElems[0]).next()
     }, 6000)
+
+    var elemsFloatingbtn = document.querySelectorAll('.fixed-action-btn');
+    M.FloatingActionButton.init(elemsFloatingbtn, {
+        direction: 'top'
+    });
 });

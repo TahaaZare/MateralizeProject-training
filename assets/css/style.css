@@ -62,6 +62,10 @@ nav .brand-logo img:hover {
   margin-right: 1.2rem !important;
   margin-left: 1.2rem !important;
 }
+.mx-2{
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
+}
 
 .page-footer {
   background-color: transparent !important;
