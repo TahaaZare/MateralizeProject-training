@@ -1,0 +1,150 @@
+/*Silder */
+.top_carousel {
+    height: calc(100vh - 64px) !important;
+  }
+  .top_carousel a img {
+    min-height: 100% !important;
+    width: unset !important;
+    min-width: 100%;
+  }
+  
+  
+  .quick_accsess_items .image img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 135px;
+  }
+  .quick_accsess_items h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: rgba(117, 55, 231, 0.911);
+  }
+  
+  .subtitl {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 4px solid #880e4f;
+    margin-top: 5px;
+    transition: all 600ms ease-in;
+    cursor: pointer;
+  }
+  .subtitl:hover {
+    font-size: 2rem;
+    transition: all 600ms ease-out;
+  }
+  .quick_item {
+    transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+    transition: 0.6s ease all;
+  }
+  
+  .quick_item:hover {
+    transform: perspective(800px) rotateY(-15deg) translateY(-10px) rotateX(10deg)
+      scale(1);
+    filter: blur(0);
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #880e4f);
+    -webkit-filter: drop-shadow(0 0 5px #880e4f);
+  }
+  /*end Slider*/
+  
+  /*Divider*/
+  .deivider {
+    width: 100%;
+    filter: drop-shadow(0 0 6px #880e4f);
+    -webkit-filter: drop-shadow(0 0 6px #880e4f);
+  }
+  .deivider img {
+    width: 90%;
+    max-width: 450px;
+  }
+  
+  .subtitl2 {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 4px solid #4a148c;
+    margin-top: 5px;
+    transition: all 600ms ease-in;
+    cursor: pointer;
+  }
+  .subtitl2:hover {
+    font-size: 2rem;
+    transition: all 600ms ease-out;
+  }
+  
+  .simple_item {
+    height: 30vh;
+    padding: 1rem;
+  }
+  .simple_item .image {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 6px;
+    filter: drop-shadow(0 0 6px black);
+    -webkit-filter: drop-shadow(0 0 6px black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .drop-shodow {
+    filter: drop-shadow(0 0 4px #880e4f);
+    -webkit-filter: drop-shadow(0 0 4px #880e4f);
+  }
+  .simple_item .image::after {
+    content: "مـشاهـده گـالری";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(39, 2, 39, 0.8);
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all 500ms ease-in;
+    color: #f8bbd0;
+    border-radius: 6px;
+  }
+  
+  .simple_item:hover .image::after {
+    transform: scale(1);
+  }
+  .simple_item .image img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-object-fit: cover;
+    -moz-object-fit: cover;
+  }
+  
+  .Ronded {
+    border-radius: 6px;
+  }
+  
+  .social_icons_rows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .social_items {
+    transition: all 500ms ease-in-out;
+  }
+  .social_items_Footer {
+    transition: all 500ms ease-in-out;
+  }
+  .social_items_Footer:hover {
+    font-size: 40px;
+    transition: all 500ms ease-in-out;
+  }
+  .social_items:hover {
+    font-size: 50px;
+    transform: perspective(800px) rotateY(-15deg) translateY(-10px) rotateX(10deg)
+      scale(1);
+    transition: all 500ms ease-in-out;
+  }
+  
