@@ -39,11 +39,13 @@ nav .brand-logo a {
 nav .brand-logo img {
   width: 100%;
   filter: drop-shadow(0 0 1px white);
+  -webkit-filter :drop-shadow(0 0 1px white);
   transition: all 600ms ease;
 }
 
 nav .brand-logo img:hover {
   filter: drop-shadow(0 0 5px rgb(246, 246, 246));
+  -webkit-filter :drop-shadow(0 0 5px rgb(246, 246, 246));
 }
 .item_content {
   width: 100%;
@@ -117,6 +119,7 @@ nav .brand-logo img:hover {
   background-color: rgb(0, 0, 0, 0.3);
   font-size: 1.2rem;
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 #nav_svg {
   position: fixed;
@@ -125,6 +128,7 @@ nav .brand-logo img:hover {
 }
 .nav-shodow {
   filter: drop-shadow(0 0 6px black);
+  -webkit-filter: drop-shadow(0 0 6px black);
 }
 nav ul li a:hover {
   background: transparent !important;
@@ -193,6 +197,7 @@ nav ul li a:hover {
 .deivider {
   width: 100%;
   filter: drop-shadow(0 0 6px #880e4f);
+  -webkit-filter:drop-shadow(0 0 6px #880e4f);
 }
 .deivider img {
   width: 90%;
@@ -222,9 +227,14 @@ nav ul li a:hover {
   width: 100% !important;
   border-radius: 6px;
   filter: drop-shadow(0 0 6px black);
+  -webkit-filter :drop-shadow(0 0 6px black);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.drop-shodow {
+  filter: drop-shadow(0 0 4px #880e4f);
+  -webkit-filter : drop-shadow(0 0 4px #880e4f);
 }
 .simple_item .image::after {
   content: "مـشاهـده گـالری";
@@ -235,7 +245,7 @@ nav ul li a:hover {
   top: 0;
   left: 0;
   background-color: rgb(39, 2, 39, 0.8);
-  width: 100% ;
+  width: 100%;
   height: 100%;
   transform: scale(0);
   transition: all 500ms ease-in;
@@ -244,13 +254,21 @@ nav ul li a:hover {
 }
 
 .simple_item:hover .image::after {
-    transform: scale(1);
-  }
-.simple_item .image img {
-  min-width: 100% ;
-  min-height: 100% ;
-  object-fit: cover;
+  transform: scale(1);
 }
+.simple_item .image img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+}
+
+.Ronded {
+  border-radius: 6px;
+}
+
 @media (min-width: 992px) {
   nav .brand-logo {
     right: 6px !important ;
