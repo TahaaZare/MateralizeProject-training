@@ -1,0 +1,98 @@
+#search_Container {
+  margin-top: 100px !important;
+}
+.lbl-search {
+  font-size: 1rem !important;
+  margin: 0.3rem !important;
+}
+
+.simple_item {
+  height: 30vh;
+  padding: 1rem;
+}
+.simple_item .image {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 6px;
+  filter: drop-shadow(0 0 6px black);
+  -webkit-filter: drop-shadow(0 0 6px black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.simple_item .image::after {
+  content: "مـشاهـده گـالری";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(39, 2, 39, 0.8);
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: all 200ms ease-in;
+  color: #f8bbd0;
+  border-radius: 6px;
+}
+
+.simple_item:hover .image::after {
+  transform: scale(1);
+}
+.simple_item .image img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+}
+input[type="text"] {
+  border-bottom: 1px solid #1000f0 !important;
+}
+.divider {
+  background-color: #42404091 !important;
+}
+label {
+  color: black;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination li a {
+  font-size: 1.2rem !important;
+}
+.pagination li.active a {
+  background-color: green;
+  border-radius: 6px;
+  margin-left: 1rem !;
+  margin-right: 1rem !;
+}
+.subtitl2 {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 4px solid #4a148c;
+  margin-top: 5px;
+  transition: all 600ms ease-in;
+  cursor: pointer;
+}
+.subtitl2:hover {
+  font-size: 2rem;
+  border: 4px solid green;
+  transition: all 600ms ease-out;
+}
+.serach-top-title {
+  font-size: 2.2rem !important;
+}
+.paragrapht-serach {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  color: #880e4f ;
+}
+.Bold{
+  font-weight: bold;
+}

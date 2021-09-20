@@ -18,7 +18,9 @@ body {
   direction: rtl;
   text-align: right;
 }
-
+button {
+  font-family: "Shabnam";
+}
 nav .sidenav-trigger {
   float: right;
 }
@@ -62,11 +64,25 @@ nav .brand-logo img:hover {
   margin-right: 1.2rem !important;
   margin-left: 1.2rem !important;
 }
-.mx-2{
+.my-4 {
+  margin-top: 1.2rem !important;
+  margin-bottom: 1.2rem !important;
+}
+.my-1{
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.mx-2 {
   margin-right: 0.5rem !important;
   margin-left: 0.5rem !important;
 }
 
+.p-2 {
+  padding: 1rem !important;
+}
+.m-2 {
+  margin: 1rem !important;
+}
 .page-footer {
   background-color: transparent !important;
   display: flex;
@@ -156,8 +172,8 @@ nav .brand-logo img:hover {
   top: 32px;
   pointer-events: none !important;
 }
-#footer_svg{
-  bottom:  32px;
+#footer_svg {
+  bottom: 32px;
   pointer-events: none !important;
 }
 .nav-shodow {
@@ -168,7 +184,19 @@ nav ul li a:hover {
   background: transparent !important;
 }
 
-
+.social_items_Footer {
+  transition: all 500ms ease-in-out;
+}
+.social_items_Footer:hover {
+  font-size: 40px;
+  transition: all 500ms ease-in-out;
+}
+.social_items:hover {
+  font-size: 50px;
+  transform: perspective(800px) rotateY(-15deg) translateY(-10px) rotateX(10deg)
+    scale(1);
+  transition: all 500ms ease-in-out;
+}
 @media (min-width: 992px) {
   nav .brand-logo {
     right: 6px !important ;

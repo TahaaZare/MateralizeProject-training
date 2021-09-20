@@ -134,17 +134,5 @@
   .social_items {
     transition: all 500ms ease-in-out;
   }
-  .social_items_Footer {
-    transition: all 500ms ease-in-out;
-  }
-  .social_items_Footer:hover {
-    font-size: 40px;
-    transition: all 500ms ease-in-out;
-  }
-  .social_items:hover {
-    font-size: 50px;
-    transform: perspective(800px) rotateY(-15deg) translateY(-10px) rotateX(10deg)
-      scale(1);
-    transition: all 500ms ease-in-out;
-  }
+  
   

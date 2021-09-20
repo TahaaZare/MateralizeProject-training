@@ -18,4 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     M.FloatingActionButton.init(elemsFloatingbtn, {
         direction: 'top'
     });
+
+    var elems = document.querySelectorAll('select');
+     M.FormSelect.init(elems, {});
 });
